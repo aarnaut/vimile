@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vimile</string>
+    <string name="service_label">Vimile keyboard navigation</string>
+    <string name="service_description">Lets you navigate any app with a hardware keyboard, Vim-style. Press f to show hints on clickable elements.</string>
+</resources>

@@ -1,4 +1,4 @@
-package dev.vimile
+package com.aarnaut.vimile
 
 import android.content.Context
 import android.graphics.Canvas

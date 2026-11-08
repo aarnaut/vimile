@@ -1,4 +1,4 @@
-package dev.vimile
+package com.aarnaut.vimile
 
 import android.graphics.Rect
 import android.view.accessibility.AccessibilityNodeInfo

@@ -1,4 +1,4 @@
-package dev.vimile
+package com.aarnaut.vimile
 
 import android.app.Activity
 import android.content.Intent

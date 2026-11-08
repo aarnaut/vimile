@@ -97,7 +97,7 @@ on-screen keyboard usually stays hidden while it's connected.
 On an emulator you can do it from the terminal:
 
 ```bash
-adb shell settings put secure enabled_accessibility_services dev.vimile/.VimileService
+adb shell settings put secure enabled_accessibility_services com.aarnaut.vimile/.VimileService
 adb shell settings put secure accessibility_enabled 1
 ```
 
@@ -125,11 +125,11 @@ broadcast and run them through the same handler as real keys (e.g. for screensho
 Lowercase letters are plain keys, uppercase letters are Shift+key, `.` is Esc:
 
 ```bash
-adb shell am broadcast -a dev.vimile.DEBUG --es keys f     # show hints
-adb shell am broadcast -a dev.vimile.DEBUG --es keys sa    # then type hint letters
-adb shell am broadcast -a dev.vimile.DEBUG --es keys gn    # open notifications
-adb shell am broadcast -a dev.vimile.DEBUG --es keys x     # dismiss
-adb shell am broadcast -a dev.vimile.DEBUG --es keys .     # Esc
+adb shell am broadcast -a com.aarnaut.vimile.DEBUG --es keys f     # show hints
+adb shell am broadcast -a com.aarnaut.vimile.DEBUG --es keys sa    # then type hint letters
+adb shell am broadcast -a com.aarnaut.vimile.DEBUG --es keys gn    # open notifications
+adb shell am broadcast -a com.aarnaut.vimile.DEBUG --es keys x     # dismiss
+adb shell am broadcast -a com.aarnaut.vimile.DEBUG --es keys .     # Esc
 ```
 
 Don't use `android layout` / UI Automator-based tools while testing: they start a

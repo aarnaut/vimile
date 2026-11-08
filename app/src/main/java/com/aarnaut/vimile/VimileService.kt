@@ -1,4 +1,4 @@
-package dev.vimile
+package com.aarnaut.vimile
 
 import android.accessibilityservice.AccessibilityService
 import android.content.BroadcastReceiver
@@ -281,8 +281,8 @@ class VimileService : AccessibilityService() {
      * Debug builds only: feeds key presses from the terminal through the same handler real
      * keys use, because adb-injected key presses never reach accessibility services.
      * Lowercase letters are plain keys, uppercase letters are Shift+key, `.` is Esc (shell-safe).
-     *   adb shell am broadcast -a dev.vimile.DEBUG --es keys f      (show hints)
-     *   adb shell am broadcast -a dev.vimile.DEBUG --es keys gn     (open notifications)
+     *   adb shell am broadcast -a com.aarnaut.vimile.DEBUG --es keys f      (show hints)
+     *   adb shell am broadcast -a com.aarnaut.vimile.DEBUG --es keys gn     (open notifications)
      */
     private fun registerDebugReceiver() {
         if (applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE == 0) return
@@ -308,7 +308,7 @@ class VimileService : AccessibilityService() {
 
     companion object {
         private const val TAG = "Vimile"
-        private const val DEBUG_ACTION = "dev.vimile.DEBUG"
+        private const val DEBUG_ACTION = "com.aarnaut.vimile.DEBUG"
         private const val MIN_TARGET_DP = 10
         /** j/k/h/l swipe this share of the scrollable area. */
         private const val SCROLL_STEP = 0.4f

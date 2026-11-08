@@ -1,4 +1,4 @@
-package dev.vimile
+package com.aarnaut.vimile
 
 import android.accessibilityservice.AccessibilityService
 import android.accessibilityservice.GestureDescription

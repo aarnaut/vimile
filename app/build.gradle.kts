@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "dev.vimile"
+    namespace = "com.aarnaut.vimile"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "dev.vimile"
+        applicationId = "com.aarnaut.vimile"
         minSdk = 26
         targetSdk = 37
         versionCode = 1
